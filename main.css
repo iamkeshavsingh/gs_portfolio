@@ -1,0 +1,141 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+.border {
+    border: 1px solid black;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.main {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar_heading {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar_heading_content {
+    color: white;
+    font-size: 30px;
+}
+
+.sidebar_navigation {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+.sidebar_navigation_item {
+    color: white;
+    font-size: 25px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+
+.main_navigation {
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 80%;
+}
+
+.main_navigation_items_wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_navigation_items_wrapper>ul {
+    list-style-type: none;
+}
+
+.main_navigation_items_wrapper li {
+    display: inline-block;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.main_navigation_items_wrapper a {
+    text-decoration: none;
+    color: brown;
+    font-size: 18px;
+}
+
+
+.main_image_wrapper {
+    height: inherit;
+    background-image: url('./img/keshav.jpeg');
+    background-position: 60% 0;
+    width: 60%;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.main_content_wrapper {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main_content h2 {
+    font-size: 25px;
+}
+
+.main_content h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.download_cv_wrapper {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0275d8;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+
+.download_cv_wrapper a {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20%;
+    text-decoration: none;
+}
+
+.qualification_wrapper {
+    display: none;
+}

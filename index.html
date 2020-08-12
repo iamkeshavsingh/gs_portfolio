@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keshav</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            height: 100px;
-            align-items: center;
-        }
-
-        .header_logo {
-            padding-left: 30px;
-        }
-
-        .header_navigation {}
-
-        .header_navigation_ul {
-            display: flex;
-            list-style-type: none;
-        }
-
-        .header_navigation_ul>li {
-            padding: 0 30px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="header">
-        <!-- logo -->
-        <div class="header_logo">
-            <h3>Keshav Singh</h3>
+  <body>
+    <main>
+      <div class="sidebar">
+        <div class="sidebar_heading">
+          <div class="sidebar_heading_content">
+            Keshav Singh
+          </div>
         </div>
-        <!-- navigation Links -->
-        <div class="header_navigation">
-            <ul class="header_navigation_ul">
-                <li>About Me</li>
-                <li>My Skiils</li>
-                <li>Download My CV</li>
-                <li>Contact Me</li>
+        <div class="sidebar_navigation">
+          <div class="sidebar_navigation_item" id="download_cv_action">
+            Download CV
+          </div>
+          <div class="sidebar_navigation_item" id="qualification_action">
+            Qualification
+          </div>
+          <div class="sidebar_navigation_item" id="profile_action">Know Me</div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="main_navigation">
+          <div class="main_navigation_items_wrapper">
+            <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Skills</a></li>
+              <li><a href="">Contact</a></li>
             </ul>
+          </div>
         </div>
-    </div>
-
-</body>
-
+        <div class="main_image_wrapper"></div>
+        <div class="main_content_wrapper">
+          <div class="main_content">
+            <h2>Hey!!!</h2>
+            <h1>I am <span id="content">Keshav Singh</span></h1>
+            <h2>Web Designer and Android Developer</h2>
+            <h3>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/keshav-singh-73396b145"
+                >>> Follow me on LinkedIn</a
+              >
+            </h3>
+            <h3>
+              <a target="_blank" href="https://github.com/iamerratic"
+                >>> See My Work On Github</a
+              >
+            </h3>
+          </div>
+          <div class="download_cv_wrapper">
+            <a target="_blank" href="./res/keshav_resume.pdf"
+              >Downloard My CV</a
+            >
+          </div>
+          <div class="qualification_wrapper">
+            <h3>
+              >> I am a 2020 pass out graduate persude Btech in Computer Science
+              and Engineering
+            </h3>
+            <h3>
+              >> Completed 12th in ISC board and passed with an aggregate of
+              95%.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
 </html>
