@@ -2,58 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keshav</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            height: 100px;
-            align-items: center;
-        }
-
-        .header_logo {
-            padding-left: 30px;
-        }
-
-        .header_navigation {}
-
-        .header_navigation_ul {
-            display: flex;
-            list-style-type: none;
-        }
-
-        .header_navigation_ul>li {
-            padding: 0 30px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keshav</title>
+  <link rel="stylesheet" href="./main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <div class="header">
-        <!-- logo -->
-        <div class="header_logo">
-            <h3>Keshav Singh</h3>
+  <div class="main_wrapper">
+    <div class="sidebar">
+      <div class="sidebar_header">
+        <div class="siderbar_header_content">
+          Keshav Singh
         </div>
-        <!-- navigation Links -->
-        <div class="header_navigation">
-            <ul class="header_navigation_ul">
-                <li>About Me</li>
-                <li>My Skiils</li>
-                <li>Download My CV</li>
-                <li>Contact Me</li>
-            </ul>
-        </div>
+      </div>
+      <div class="sidebar_navigation">
+        <div class="sidebar_navigation_item">Download CV</div>
+        <div class="sidebar_navigation_item">Qualification</div>
+        <div class="sidebar_navigation_item">Know Me</div>
+      </div>
     </div>
-
+    <div class="main_area">
+      <div class="main_area_header">
+        <ul>
+          <li>About Me</li>
+          <li>Skills</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
