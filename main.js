@@ -3,7 +3,7 @@ var decButton = document.querySelector('.decrement');
 var counter = document.querySelector('.counter_value');
 
 function setCounterValue(num) {
-    var currentValue = counter.textContent;
+    var currentValue = Number(counter.textContent);
     if (num > 0) {
         currentValue += 1;
     }
